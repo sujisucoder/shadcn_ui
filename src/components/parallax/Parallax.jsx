@@ -25,10 +25,7 @@ function Parallax({ slides }) {
         
       </div>
 
-      <div style={sectionStyles}>
-        <h1 style={{ fontSize: '4rem', color: 'white', textAlign: 'center' }}>Normal Section</h1>
-
-      </div>
+    
     </>
   )
 }

@@ -3,17 +3,19 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-const NavTitles = ["Home", "About", "Products", "ContactUS"]
+const NavTitles = ["Home", "About", "Products", "Contact us"]
 
 export default function Navbar() {
 
   const frostedStyles = {
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
     backdropFilter: 'blur(20px) saturate(160%) contrast(45%) brightness(140%)',
-    WebkitBackdropFilter: 'blur(20px) saturate(160%) contrast(45%) brightness(140%)',
-    position:'fixed',
-    width:'100%',
-    zIndex: 1000,
+    // WebkitBackdropFilter: 'blur(20px) saturate(160%) contrast(45%) brightness(140%)',
+    zIndex: 1,
+    overflow: 'hidden',
+    position: 'fixed',
+    top: 0,
+    width: '100%'
   };
   return (
     <div  className="flex   w-full flex-col" style={frostedStyles} >

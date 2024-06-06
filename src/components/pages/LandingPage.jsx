@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Alert } from '../ui/alert'
 import ImageSlider from '../carousel/ImageSlider';
 import Parallax from '../parallax/Parallax';
+import Carousel from '../autoplayCarousel/Carousel';
+import { countries } from "../data/Data";
 // import {
 //   Carousel,
 //   CarouselContent,
@@ -30,22 +32,26 @@ function LandingPage() {
 
 
   return (
-    <div className=''>
+    <div className='  mt-[90px]'>
 
-      {/* <Alert className={alertFlag ? "hidden" : "flex"}  onClick={handleClick}>we have added 5 new exciting courses to our list head to our latest courses section to know more  </Alert> */}
-      <Alert
-        className={`${alertFlag ? "hidden" : "flex"} pt-4`}
-        onClick={handleClick}
-      ></Alert>
-      <div className="w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-[1280px] lg:h-[600px] mx-auto  my-16">
-        <ImageSlider slides={slides} />
+<div>
+      <Alert className={alertFlag ? "hidden" : "flex"}  onClick={handleClick}>we have added 5 new exciting courses to our list head to our latest courses section to know more  </Alert>
       </div>
 
-      
+      <div className="w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-[1180px] lg:h-[400px] mx-auto  my-2">
+        {/* <ImageSlider slides={slides} /> */}
+      <Carousel images={slides} />
+
+      </div>
+
       <div>
         <Parallax slides={slides} />
       </div>
 
+      
+      
+      {/* <Carousel images={countries} /> */}
+     
 
     </div>
   )
