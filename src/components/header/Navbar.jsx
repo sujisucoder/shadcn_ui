@@ -6,10 +6,19 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 const NavTitles = ["Home", "About", "Products", "ContactUS"]
 
 export default function Navbar() {
+
+  const frostedStyles = {
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backdropFilter: 'blur(20px) saturate(160%) contrast(45%) brightness(140%)',
+    WebkitBackdropFilter: 'blur(20px) saturate(160%) contrast(45%) brightness(140%)',
+    position:'fixed',
+    width:'100%',
+    zIndex: 1000,
+  };
   return (
-    <div className="flex  w-full flex-col">
-      <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
-        <nav className="hidden bg-black flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+    <div  className="flex   w-full flex-col" style={frostedStyles} >
+      <header className="  sticky top-0 flex h-16 items-center gap-4 border-b  px-4 md:px-6" >
+        <nav className="hidden  flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           {/* logo */}
           <a
             href="#"
@@ -54,7 +63,7 @@ export default function Navbar() {
             </nav>
           </SheetContent>
         </Sheet>
-        <div className="  flex w-full sm:w-auto items-center space-x-4 gap-4 md:ml-auto md:gap-2 lg:gap-4">
+        <div className=" flex w-full sm:w-auto items-center space-x-4 gap-4 md:ml-auto md:gap-2 lg:gap-4">
                       {/* nav links */}
           {NavTitles.map((title,key)=>(
               <a

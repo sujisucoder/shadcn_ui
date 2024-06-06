@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Alert } from '../ui/alert'
+import ImageSlider from '../carousel/ImageSlider';
+import Parallax from '../parallax/Parallax';
 // import {
 //   Carousel,
 //   CarouselContent,
@@ -8,6 +10,14 @@ import { Alert } from '../ui/alert'
 //   CarouselPrevious,
 // } from "@/components/ui/carousel"
 
+const slides = [
+  { url: 'https://images.unsplash.com/photo-1717496002081-38a90d3cba26?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: 'image1' },
+  { url: 'https://images.unsplash.com/photo-1716881757832-b71ca98e3ca5?q=80&w=2686&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: 'image2' },
+  { url: 'https://plus.unsplash.com/premium_photo-1717563132055-3e7a31ab3fa6?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: 'image3' },
+  { url: 'https://images.unsplash.com/photo-1715464881844-a6de4a3b004c?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: 'image4' },
+  { url: 'https://images.unsplash.com/photo-1715261174985-cc54833c0e27?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: 'image5' },
+  { url: 'https://images.unsplash.com/photo-1716033712290-0a9bc8bdc796?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: 'image6' }
+]
 
 
 function LandingPage() {
@@ -16,20 +26,24 @@ function LandingPage() {
     console.log("clicked");
     setAlertFlag(true)
   }
+
+
+
   return (
     <div className=''>
 
-      <Alert className={alertFlag ? "hidden" : "flex"} onClick={handleClick}>we have added 5 new exciting courses to our list head to our latest courses section to know more  </Alert>
+      {/* <Alert className={alertFlag ? "hidden" : "flex"}  onClick={handleClick}>we have added 5 new exciting courses to our list head to our latest courses section to know more  </Alert> */}
+      <Alert
+        className={`${alertFlag ? "hidden" : "flex"} pt-4`}
+        onClick={handleClick}
+      ></Alert>
+      <div className="w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-[1280px] lg:h-[600px] mx-auto  my-16">
+        <ImageSlider slides={slides} />
+      </div>
+
+      
       <div>
-      {/* <Carousel>
-        <CarouselContent>
-          <CarouselItem>...</CarouselItem>
-          <CarouselItem>...</CarouselItem>
-          <CarouselItem>...</CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel> */}
+        <Parallax slides={slides} />
       </div>
 
 
