@@ -76,7 +76,7 @@ export default function Navbar() {
               {title}
             </a>
           ))}
-          <Button>Signup</Button>
+          <Button>SignIn/Signup</Button>
           <form className="ml-auto flex-1 sm:flex-initial">
             <div className="relative">
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />

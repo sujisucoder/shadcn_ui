@@ -4,6 +4,9 @@ import ImageSlider from '../carousel/ImageSlider';
 import Parallax from '../parallax/Parallax';
 import Carousel from '../autoplayCarousel/Carousel';
 import { countries } from "../data/Data";
+import TabsDemo from '../customTabs/TabsDemo';
+import backgroundImage from '../../assets/testimonial-img.jpg';  
+import ProductCarousel from '../products-carousel/ProductCarousel';
 // import {
 //   Carousel,
 //   CarouselContent,
@@ -41,17 +44,47 @@ function LandingPage() {
       <div className="w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-[1180px] lg:h-[400px] mx-auto  my-2">
         {/* <ImageSlider slides={slides} /> */}
       <Carousel images={slides} />
-
       </div>
-
-      <div>
-        <Parallax slides={slides} />
-      </div>
-
-      
-      
       {/* <Carousel images={countries} /> */}
-     
+
+            {/* product Gallery  */}
+  <section className='  bg-landingPageBlue w-full h-auto border flex flex-col justify-center items-center py-8' >
+        {/* typography */}
+        <div className=' px-12 pt-12 '>
+          <div className=' flex flex-col items-center justify-center '>
+          <h1 className=' font-semibold text-4xl '>Product Gallery</h1>
+          <div className='max-w-xl mx-auto'>
+              <p className='text-center py-3'>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+            </div>
+          </div>
+         
+        </div>
+        {/* typography ends */}
+
+        {/* product carousel */}
+        <div  >
+          {/* product cards */}
+          <div className="w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-[1180px] lg:h-auto  border">
+            <div className='p-12'>
+          <ProductCarousel />
+            </div>
+          </div>
+
+        </div>
+        {/* product carousel ends */}
+      </section>
+      {/* product gallery ends */}
+      {/* user tab page */}
+      <section className=' w-auto h-[706px] '>
+        <div className='container-tabs w-full h-full p-8'>
+          <TabsDemo />
+        </div>
+      </section>
+      {/* user tab page  ends*/}
+      {/* testimonial */}
+      <section className='w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-auto lg:h-[400px] mx-auto  '>
+        <div  className='w-full h-screen bg-cover bg-center ' style={{ backgroundImage: `url(${backgroundImage})` }}></div>
+      </section>
 
     </div>
   )
