@@ -82,9 +82,9 @@ function LandingPage() {
       </section>
       {/* user tab page  ends*/}
       {/* testimonial */}
-      <section className='w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-auto lg:h-[400px] mx-auto  '>
+      {/* <section className='w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-auto lg:h-[400px] mx-auto  '>
         <div  className='w-full h-screen bg-cover bg-center ' style={{ backgroundImage: `url(${backgroundImage})` }}></div>
-      </section>
+      </section> */}
 
     </div>
   )
