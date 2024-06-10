@@ -63,17 +63,18 @@ function Carousel({ images }) {
           &rsaquo;
         </div>
         <div className="carousel_pagination">
-          {images.map((_, index) => {
+          {images.map((image, index) => {
             return (
               <div
                 key={index}
                 className={
                   index == current
-                    ? "pagination_dot pagination_dot-active"
-                    : "pagination_dot"
+                      ? "pagination_title pagination_title-active"
+                  : "pagination_title"
+                    
                 }
                 onClick={() => setCurrent(index)}
-              ></div>
+              > {image.title}</div>
             );
           })}
         </div>
