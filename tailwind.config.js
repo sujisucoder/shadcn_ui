@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         landingPageBlue: "#E9F5FF",
         footerBackground:'#004075',
+        tabBgColor:"#2194F3",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

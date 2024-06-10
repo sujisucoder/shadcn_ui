@@ -18,15 +18,15 @@ import {
 
 export default function TabsDemo() {
   return (
-    <Tabs defaultValue="account" className="w-full  flex flex-col justify-center items-center ">
+    <Tabs defaultValue="Indivitual" className="w-full  flex flex-col justify-center items-center ">
       <TabsList className="grid  w-1/2     grid-cols-4">
         <TabsTrigger value="Indivitual">Indivitual</TabsTrigger>
         <TabsTrigger value="Corporate">Corporate</TabsTrigger>
         <TabsTrigger value="Partner">Partner</TabsTrigger>
         <TabsTrigger value="Collage">Collage</TabsTrigger>
       </TabsList>
-      <TabsContent className=" w-full " value="Indivitual">
-      <Card className="text-center">
+      <TabsContent className=" w-full h-[600px] " value="Indivitual">
+      <Card className="text-center h-full">
           <CardHeader>
             <CardTitle>Indivitual</CardTitle>
             <CardDescription>
@@ -46,8 +46,8 @@ export default function TabsDemo() {
           </CardFooter>
         </Card>
       </TabsContent>
-      <TabsContent className=" w-full " value="Corporate">
-      <Card className="text-center">
+      <TabsContent className=" w-full h-[600px] " value="Corporate">
+      <Card className="text-center h-full">
           <CardHeader>
             <CardTitle>Corporate</CardTitle>
             <CardDescription>
@@ -68,8 +68,8 @@ export default function TabsDemo() {
         </Card>
       </TabsContent>
         
-      <TabsContent className=" w-full " value="Partner">
-      <Card className="text-center">
+      <TabsContent className=" w-full h-[600px] " value="Partner">
+      <Card className="text-center h-full">
           <CardHeader>
             <CardTitle>Partner</CardTitle>
             <CardDescription>
@@ -90,8 +90,8 @@ export default function TabsDemo() {
         </Card>
        </TabsContent>
 
-       <TabsContent className=" w-full " value="Collage">
-       <Card className="text-center">
+       <TabsContent className=" w-full h-[600px] " value="Collage">
+       <Card className="text-center h-full">
           <CardHeader>
             <CardTitle>Collage</CardTitle>
             <CardDescription>
