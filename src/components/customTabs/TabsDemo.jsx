@@ -19,7 +19,7 @@ import {
 export default function TabsDemo() {
   return (
     <Tabs defaultValue="Indivitual" className="w-full  flex flex-col justify-center items-center ">
-      <TabsList className="grid  w-1/2     grid-cols-4">
+      <TabsList className="">
         <TabsTrigger value="Indivitual">Indivitual</TabsTrigger>
         <TabsTrigger value="Corporate">Corporate</TabsTrigger>
         <TabsTrigger value="Partner">Partner</TabsTrigger>

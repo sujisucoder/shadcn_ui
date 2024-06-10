@@ -1,6 +1,6 @@
 .carousel {
   display: flex;
-  height: 400px;
+  height: 500px;
   width: 100%;
   /* max-width: 1002px; */
 }
@@ -115,7 +115,8 @@
 
 .pagination_title {
   cursor: pointer;
-  color: #f5f5f5;
+  color:grey;
+
 }
 
 .pagination_title:hover {
@@ -123,6 +124,7 @@
 }
 
 .pagination_title-active {
-  color: steelblue;
-  text-decoration: underline;
+  color: white;
+
+  text-decoration: none;
 }

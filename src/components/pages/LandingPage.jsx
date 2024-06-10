@@ -38,23 +38,24 @@ function LandingPage() {
     <div className='  mt-[90px]'>
 
 <div>
-      <Alert className={alertFlag ? "hidden" : "flex text-sm sm:text-lg"}  onClick={handleClick}>we have added 5 new exciting courses to our list head to our latest courses section to know more  </Alert>
+      <Alert className={alertFlag ? "hidden" : "flex justify-evenly text-sm sm:text-lg"} >we have added 5 new exciting courses to our list head to our latest courses section to know more <span className=' cursor-pointer'  onClick={handleClick}>&#x2716;
+</span> </Alert>
       </div>
 
-      <div className="w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-[1180px] lg:h-[400px] mx-auto  my-2">
+      <div className="">
         {/* <ImageSlider slides={slides} /> */}
-      {/* <Carousel images={slides} /> */}
+      <Carousel images={slides} />
       </div>
       {/* <Carousel images={countries} /> */}
 
             {/* product Gallery  */}
-            <section className='  bg-landingPageBlue w-full h-auto border flex flex-col justify-center items-center py-8' >
+            <section className='  bg-landingPageBlue w-full h-auto  flex flex-col justify-center items-center py-8' >
         {/* typography */}
         <div className=' px-12 pt-12 '>
           <div className=' flex flex-col items-center justify-center '>
           <h1 className=' font-semibold text-4xl '>Product Gallery</h1>
           <div className='max-w-xl mx-auto'>
-              <p className='text-center py-3'>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+              <p className='text-center font-light text-sm md:text-md py-3'>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
             </div>
           </div>
          
@@ -64,7 +65,7 @@ function LandingPage() {
         {/* product carousel */}
         <div  >
           {/* product cards */}
-          <div className="w-[302px] h-[180px] sm:w-[802px] sm:h-[280px] lg:w-[1180px] lg:h-auto  border">
+          <div className=" md:w-[1180px] md:h-auto  ">
             <div className='p-12'>
           <ProductCarousel />
             </div>
@@ -76,8 +77,8 @@ function LandingPage() {
       {/* product gallery ends */}
       
       {/* user tab page */}
-      <section className=' w-auto h-[706px] border border-red-500'>
-        <div className='container-tabs w-full h-full p-8'>
+      <section className=' w-auto h-[706px] '>
+        <div className='w-full h-full p-2 md:p-8'>
           <TabsDemo />
         </div>
       </section>
@@ -89,11 +90,11 @@ function LandingPage() {
       {/* testimonial ends */}
 
       {/* About us */}
-      <section className=' w-auto h-[706px] border border-red-500'>
-        <div className='flex flex-col justify-center items-center text-center py-6 ' >
+      <section className=' w-auto h-[706px] '>
+        <div className='flex flex-col justify-center items-center text-center p-6 ' >
           <div  >
-            <h1 className=' font-bold text-6xl'>About Us</h1>
-            <p className=' font-semibold'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, neque impedit esse totam adipisci eius laudantium omnis.</p>
+            <h1 className=' font-bold text-4xl md:text-5xl pb-2'>About Us</h1>
+            <p className='  font-light text-md md:text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, neque impedit esse totam adipisci eius laudantium omnis.</p>
           </div>
         </div>
       </section>
