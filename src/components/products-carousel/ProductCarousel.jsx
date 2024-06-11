@@ -56,6 +56,7 @@ const data = [
 ];
 
 export default function ProductCarousel() {
+  
   return (
     <Carousel
     
@@ -63,7 +64,7 @@ export default function ProductCarousel() {
         align: "start",
         
       }}
-      className="w-full h-auto  "
+      className={`w-auto h-auto`}
       plugins={[
         Autoplay({
           delay: 2000,
